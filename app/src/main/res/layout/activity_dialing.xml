@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context="com.callproject.zak_dev.callproject.dialing">
+
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Dialing"
+        android:textColor="@android:color/black"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toLeftOf="@+id/chronometer2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="98dp"
+        android:layout_height="109dp"
+        app:srcCompat="@drawable/caller_pic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/caller_id"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textSize="26sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_bias="0.502" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:text="Mobile : (+1) 35 56 786-12"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="106dp"
+        android:layout_height="79dp"
+        android:background="@null"
+        android:onClick="quitCallEvent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/call_red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp" />
+
+    <TableLayout
+        android:layout_width="307dp"
+        android:layout_height="293dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10pt"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="8pt"
+                android:layout_marginTop="10pt"
+                android:alpha="0.2"
+                app:srcCompat="@drawable/add" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10pt"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="8pt"
+                android:layout_marginTop="10pt"
+                android:alpha="0.2"
+                app:srcCompat="@drawable/extra" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10pt"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="8pt"
+                android:layout_marginTop="10pt"
+                android:alpha="0.6"
+                app:srcCompat="@drawable/blutooth" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10pt"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="8pt"
+                android:layout_marginTop="5pt"
+                android:text="Add call" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10pt"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="8pt"
+                android:layout_marginTop="5pt"
+                android:text="Extra volume" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10pt"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="8pt"
+                android:layout_marginTop="5pt"
+                android:text="Bluetooth" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10pt"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="8pt"
+                android:layout_marginTop="10pt"
+                android:alpha="0.6"
+                app:srcCompat="@drawable/speaker" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10pt"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="8pt"
+                android:layout_marginTop="10pt"
+                android:alpha="0.6"
+                app:srcCompat="@drawable/keypad" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10pt"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="8pt"
+                android:layout_marginTop="10pt"
+                android:alpha="0.2"
+                app:srcCompat="@drawable/mute" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10pt"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="8pt"
+                android:layout_marginTop="5pt"
+                android:text="Speaker" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10pt"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="8pt"
+                android:layout_marginTop="5pt"
+                android:text="Keypad" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10pt"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="8pt"
+                android:layout_marginTop="5pt"
+                android:text="Mute" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Chronometer
+        android:id="@+id/chronometer2"
+        android:gravity="center"
+        android:layout_width="68dp"
+        android:layout_height="19dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="5dp" />
+
+</android.support.constraint.ConstraintLayout>
